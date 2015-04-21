@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AppConstants.h"
 #import "GAI.h"
+#import "Flurry.h"
 
 static NSString *const kTrackingId = @"UA-44378341-2";
 static NSString *const kAllowTracking = @"allowTracking";
@@ -54,7 +55,8 @@ static NSString *const kAllowTracking = @"allowTracking";
 
     // User must be able to opt out of tracking
     [GAI sharedInstance].optOut = ![[NSUserDefaults standardUserDefaults] boolForKey:kAllowTracking];
-
+    [Flurry startSession:@"JQJP3FYJPFCS7KBN5R3C"];
+    
     return YES;
 }
 
