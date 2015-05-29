@@ -64,4 +64,10 @@
     [self presentViewController:controller animated:YES completion:nil];
     
 }
+- (void) helpText {
+    UILabel *description = [[UILabel alloc]init];
+    [description setText:@"Start with Scripture to inform your prayers. Swipe left to see the first person to pray for."];
+    UIButton *dismissButton = [[UIButton alloc]init];
+    [dismissButton setTitle:@"Dismiss" forState:UIControlStateNormal];
+}
 @end

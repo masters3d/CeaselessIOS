@@ -145,4 +145,11 @@ NSString *const kLastAnnouncementDate = @"localLastAnnouncementDate";
 }
 */
 
+- (void) helpText {
+    UILabel *description = [[UILabel alloc]init];
+    [description setText:@"Done for the day! View your progress praying for your friends. Together we can personally pray for everyone on earth!"];
+    UIButton *dismissButton = [[UIButton alloc]init];
+    [dismissButton setTitle:@"Dismiss" forState:UIControlStateNormal];
+}
+
 @end

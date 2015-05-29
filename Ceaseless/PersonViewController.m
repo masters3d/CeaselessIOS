@@ -665,4 +665,10 @@ static NSString *kInvitationError;
                                                     name:UIApplicationDidEnterBackgroundNotification
                                                   object:nil];
 }
+- (void) helpText {
+    UILabel *description = [[UILabel alloc]init];
+    [description setText:@"Pray for this person. Tap this person's face to see actions you can take or use the shortcuts on the right. Swipe left to see the next person to pray for."];
+    UIButton *dismissButton = [[UIButton alloc]init];
+    [dismissButton setTitle:@"Dismiss" forState:UIControlStateNormal];
+}
 @end
