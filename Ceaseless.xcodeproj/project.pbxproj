@@ -64,6 +64,13 @@
 		70D51C111AA6694400FA7CDC /* ScriptureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D51C101AA6694400FA7CDC /* ScriptureView.xib */; };
 		70D51C131AA66F5100FA7CDC /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D51C121AA66F5100FA7CDC /* PersonView.xib */; };
 		70D51C161AA6800D00FA7CDC /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D51C151AA6800D00FA7CDC /* PersonView.m */; };
+		70E141891B152C8300A5F7A7 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E141881B152C8300A5F7A7 /* InterfaceController.m */; };
+		70E1418C1B152C8300A5F7A7 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1418B1B152C8300A5F7A7 /* NotificationController.m */; };
+		70E1418E1B152C8300A5F7A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E1418D1B152C8300A5F7A7 /* Images.xcassets */; };
+		70E141921B152C8400A5F7A7 /* Ceaseless WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 70E141911B152C8300A5F7A7 /* Ceaseless WatchKit App.app */; };
+		70E1419A1B152C8400A5F7A7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E141981B152C8400A5F7A7 /* Interface.storyboard */; };
+		70E1419C1B152C8400A5F7A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E1419B1B152C8400A5F7A7 /* Images.xcassets */; };
+		70E1419F1B152C8400A5F7A7 /* Ceaseless WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70E141821B152C8300A5F7A7 /* Ceaseless WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		70F12B841AB208000090F47A /* PrayerJournalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F12B831AB208000090F47A /* PrayerJournalViewController.m */; };
 		70F12B871AB2082B0090F47A /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F12B861AB2082B0090F47A /* NoteViewController.m */; };
 		70F12B8A1AB231DF0090F47A /* UserIdentityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F12B891AB231DF0090F47A /* UserIdentityPicker.m */; };
@@ -85,7 +92,35 @@
 			remoteGlobalIDString = 42F3AE171AA4DD7F003A88F5;
 			remoteInfo = Ceaseless;
 		};
+		70E141931B152C8400A5F7A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F3AE101AA4DD7F003A88F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E141901B152C8300A5F7A7;
+			remoteInfo = "Ceaseless WatchKit App";
+		};
+		70E1419D1B152C8400A5F7A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F3AE101AA4DD7F003A88F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70E141811B152C8300A5F7A7;
+			remoteInfo = "Ceaseless WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70E141A61B152C8400A5F7A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				70E1419F1B152C8400A5F7A7 /* Ceaseless WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		422DDD371ACBBD3400409001 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
@@ -199,6 +234,18 @@
 		70D51C121AA66F5100FA7CDC /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		70D51C141AA6800D00FA7CDC /* PersonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonView.h; sourceTree = "<group>"; };
 		70D51C151AA6800D00FA7CDC /* PersonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonView.m; sourceTree = "<group>"; };
+		70E141821B152C8300A5F7A7 /* Ceaseless WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ceaseless WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E141851B152C8300A5F7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E141861B152C8300A5F7A7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		70E141871B152C8300A5F7A7 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		70E141881B152C8300A5F7A7 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		70E1418A1B152C8300A5F7A7 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		70E1418B1B152C8300A5F7A7 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		70E1418D1B152C8300A5F7A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		70E141911B152C8300A5F7A7 /* Ceaseless WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ceaseless WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E141971B152C8400A5F7A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E141991B152C8400A5F7A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		70E1419B1B152C8400A5F7A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		70F12B821AB208000090F47A /* PrayerJournalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrayerJournalViewController.h; sourceTree = "<group>"; };
 		70F12B831AB208000090F47A /* PrayerJournalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrayerJournalViewController.m; sourceTree = "<group>"; };
 		70F12B851AB2082B0090F47A /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
@@ -243,6 +290,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70E1417F1B152C8300A5F7A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -251,6 +305,8 @@
 			children = (
 				42F3AE1A1AA4DD7F003A88F5 /* Ceaseless */,
 				42F3AE3A1AA4DD80003A88F5 /* CeaselessTests */,
+				70E141831B152C8300A5F7A7 /* Ceaseless WatchKit Extension */,
+				70E141951B152C8400A5F7A7 /* Ceaseless WatchKit App */,
 				42F3AE191AA4DD7F003A88F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -260,6 +316,8 @@
 			children = (
 				42F3AE181AA4DD7F003A88F5 /* Ceaseless.app */,
 				42F3AE371AA4DD80003A88F5 /* CeaselessTests.xctest */,
+				70E141821B152C8300A5F7A7 /* Ceaseless WatchKit Extension.appex */,
+				70E141911B152C8300A5F7A7 /* Ceaseless WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -380,6 +438,46 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		70E141831B152C8300A5F7A7 /* Ceaseless WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				70E141871B152C8300A5F7A7 /* InterfaceController.h */,
+				70E141881B152C8300A5F7A7 /* InterfaceController.m */,
+				70E1418A1B152C8300A5F7A7 /* NotificationController.h */,
+				70E1418B1B152C8300A5F7A7 /* NotificationController.m */,
+				70E1418D1B152C8300A5F7A7 /* Images.xcassets */,
+				70E141841B152C8300A5F7A7 /* Supporting Files */,
+			);
+			path = "Ceaseless WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		70E141841B152C8300A5F7A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70E141851B152C8300A5F7A7 /* Info.plist */,
+				70E141861B152C8300A5F7A7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70E141951B152C8400A5F7A7 /* Ceaseless WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				70E141981B152C8400A5F7A7 /* Interface.storyboard */,
+				70E1419B1B152C8400A5F7A7 /* Images.xcassets */,
+				70E141961B152C8400A5F7A7 /* Supporting Files */,
+			);
+			path = "Ceaseless WatchKit App";
+			sourceTree = "<group>";
+		};
+		70E141961B152C8400A5F7A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70E141971B152C8400A5F7A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		70F664051AA7E4840073801E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,10 +571,12 @@
 				42F3AE151AA4DD7F003A88F5 /* Frameworks */,
 				42F3AE161AA4DD7F003A88F5 /* Resources */,
 				42199AB11AAE61D500797224 /* ShellScript */,
+				70E141A61B152C8400A5F7A7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70E1419E1B152C8400A5F7A7 /* PBXTargetDependency */,
 			);
 			name = Ceaseless;
 			productName = Ceaseless;
@@ -501,6 +601,39 @@
 			productReference = 42F3AE371AA4DD80003A88F5 /* CeaselessTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		70E141811B152C8300A5F7A7 /* Ceaseless WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E141A51B152C8400A5F7A7 /* Build configuration list for PBXNativeTarget "Ceaseless WatchKit Extension" */;
+			buildPhases = (
+				70E1417E1B152C8300A5F7A7 /* Sources */,
+				70E1417F1B152C8300A5F7A7 /* Frameworks */,
+				70E141801B152C8300A5F7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70E141941B152C8400A5F7A7 /* PBXTargetDependency */,
+			);
+			name = "Ceaseless WatchKit Extension";
+			productName = "Ceaseless WatchKit Extension";
+			productReference = 70E141821B152C8300A5F7A7 /* Ceaseless WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		70E141901B152C8300A5F7A7 /* Ceaseless WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70E141A41B152C8400A5F7A7 /* Build configuration list for PBXNativeTarget "Ceaseless WatchKit App" */;
+			buildPhases = (
+				70E1418F1B152C8300A5F7A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ceaseless WatchKit App";
+			productName = "Ceaseless WatchKit App";
+			productReference = 70E141911B152C8300A5F7A7 /* Ceaseless WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -524,6 +657,13 @@
 						DevelopmentTeam = 98FUBN4YVB;
 						TestTargetID = 42F3AE171AA4DD7F003A88F5;
 					};
+					70E141811B152C8300A5F7A7 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 98FUBN4YVB;
+					};
+					70E141901B152C8300A5F7A7 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 				};
 			};
 			buildConfigurationList = 42F3AE131AA4DD7F003A88F5 /* Build configuration list for PBXProject "Ceaseless" */;
@@ -541,6 +681,8 @@
 			targets = (
 				42F3AE171AA4DD7F003A88F5 /* Ceaseless */,
 				42F3AE361AA4DD80003A88F5 /* CeaselessTests */,
+				70E141811B152C8300A5F7A7 /* Ceaseless WatchKit Extension */,
+				70E141901B152C8300A5F7A7 /* Ceaseless WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -566,6 +708,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E141801B152C8300A5F7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E1418E1B152C8300A5F7A7 /* Images.xcassets in Resources */,
+				70E141921B152C8400A5F7A7 /* Ceaseless WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70E1418F1B152C8300A5F7A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E1419A1B152C8400A5F7A7 /* Interface.storyboard in Resources */,
+				70E1419C1B152C8400A5F7A7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +811,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70E1417E1B152C8300A5F7A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70E1418C1B152C8300A5F7A7 /* NotificationController.m in Sources */,
+				70E141891B152C8300A5F7A7 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -658,6 +827,16 @@
 			isa = PBXTargetDependency;
 			target = 42F3AE171AA4DD7F003A88F5 /* Ceaseless */;
 			targetProxy = 42F3AE381AA4DD80003A88F5 /* PBXContainerItemProxy */;
+		};
+		70E141941B152C8400A5F7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E141901B152C8300A5F7A7 /* Ceaseless WatchKit App */;
+			targetProxy = 70E141931B152C8400A5F7A7 /* PBXContainerItemProxy */;
+		};
+		70E1419E1B152C8400A5F7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70E141811B152C8300A5F7A7 /* Ceaseless WatchKit Extension */;
+			targetProxy = 70E1419D1B152C8400A5F7A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -676,6 +855,14 @@
 				42F3AE311AA4DD80003A88F5 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		70E141981B152C8400A5F7A7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70E141991B152C8400A5F7A7 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -715,7 +902,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -751,7 +938,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,6 +1018,78 @@
 			};
 			name = Release;
 		};
+		70E141A01B152C8400A5F7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ceaseless WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		70E141A11B152C8400A5F7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Ceaseless WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		70E141A21B152C8400A5F7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Ceaseless_WatchKit_Extension;
+				INFOPLIST_FILE = "Ceaseless WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		70E141A31B152C8400A5F7A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Ceaseless_WatchKit_Extension;
+				INFOPLIST_FILE = "Ceaseless WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -860,6 +1119,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		70E141A41B152C8400A5F7A7 /* Build configuration list for PBXNativeTarget "Ceaseless WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E141A21B152C8400A5F7A7 /* Debug */,
+				70E141A31B152C8400A5F7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70E141A51B152C8400A5F7A7 /* Build configuration list for PBXNativeTarget "Ceaseless WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70E141A01B152C8400A5F7A7 /* Debug */,
+				70E141A11B152C8400A5F7A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
